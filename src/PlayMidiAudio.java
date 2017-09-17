@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class PlayMidiAudio {
@@ -14,12 +15,10 @@ public class PlayMidiAudio {
 			input = scanner.nextLine().toLowerCase();
 			if (input.equals("play") && !midi.isPlaying) {
 				midi.PlayMidi(MIDI_FILE);
-			}
-			else if (input.equals("pause") && midi.isPlaying) {
+			} else if (input.equals("pause") && midi.isPlaying) {
 				midi.StopMidi();
 			}
 		} while (!input.equals("quit"));
-		
 	}
 	
 }

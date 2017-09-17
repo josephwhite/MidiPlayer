@@ -1,4 +1,3 @@
-
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,9 +13,9 @@ import javax.sound.midi.Sequencer;
 
 public class Midi {
 	
-	Sequencer sequencer;
-	boolean isPlaying;
-	long currentPosition;
+	private Sequencer sequencer;
+	private boolean isPlaying;
+	private long currentPosition;
 	
 	public Midi() {
 		try {
